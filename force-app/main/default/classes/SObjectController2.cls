@@ -140,7 +140,6 @@ public with sharing class SObjectController2 {
                 + '", "scale" : "' + dfr.getScale() 
                 + '"}';
 
-            if (!dfr.isUpdateable() || dfr.isCalculated()) noEditFields.add(fieldName);  // Check for Read Only and Formula fields
 
             switch on dfr.getType().name() {
                 when 'REFERENCE' {
