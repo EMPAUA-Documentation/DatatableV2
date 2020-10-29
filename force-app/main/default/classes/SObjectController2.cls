@@ -186,7 +186,6 @@ public with sharing class SObjectController2 {
         curRR.lookupFieldData = lookupFieldData;
         curRR.lookupFieldList = lookupFields;
         curRR.percentFieldList = percentFields;
-        curRR.noEditFieldList = noEditFields;
         curRR.timeFieldList = timeFields;
         curRR.picklistFieldList = picklistFields;
         curRR.picklistFieldMap = picklistFieldLabels;
