@@ -679,7 +679,6 @@ export default class DatatableV2 extends LightningElement {
                         editAttrib.edit = false;
                         break;
                     case 'text':
-                        if (this.noEditFieldArray.indexOf(fieldName) != -1) editAttrib.edit = false;
                         break;
                     default:                       
                 }
