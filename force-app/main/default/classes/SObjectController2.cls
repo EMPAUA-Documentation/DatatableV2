@@ -186,6 +186,7 @@ public with sharing class SObjectController2 {
         curRR.lookupFieldData = lookupFieldData;
         curRR.lookupFieldList = lookupFields;
         curRR.percentFieldList = percentFields;
+        curRR.noEditFieldList = noEditFields;
         curRR.timeFieldList = timeFields;
         curRR.picklistFieldList = picklistFields;
         curRR.picklistFieldMap = picklistFieldLabels;
@@ -335,7 +336,6 @@ public with sharing class SObjectController2 {
                 return 'checkbox';
             }
             when 'STRING' {
-                if (isFormula) return 'richtext';
                 return 'text';
             }
             when else {
