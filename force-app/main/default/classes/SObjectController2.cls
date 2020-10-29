@@ -140,8 +140,6 @@ public with sharing class SObjectController2 {
                 + '", "scale" : "' + dfr.getScale() 
                 + '"}';
 
-            if (!dfr.isUpdateable() || dfr.isCalculated()) noEditFields.add(fieldName);  // Check for Read Only and Formula fields
-
             switch on dfr.getType().name() {
                 when 'REFERENCE' {
                     if (dfr.isUpdateable()) {       // Only works with Master-Detail fields that are reparentable
